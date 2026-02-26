@@ -5,6 +5,9 @@ import Services from "@/components/Services";
 import Hero_Section from "@/components/Hero_Section";
 import About from "@/components/About";
 import Portfolio from "@/components/Portfolio";
+import ProjectSection from "@/components/ProjectSection";
+import FleetSection from "@/components/FleetSection";
+import CertifiedExperience from "@/components/CertifiedExperience";
 
 const Home = () => {
   return (
@@ -21,17 +24,19 @@ const Home = () => {
       {/* Clients / Portfolio */}
       <Portfolio />
       {/* Why Choose Us */}
-      <section className="py-16 px-6 md:px-12">
+      {/* <section className="py-16 px-6 md:px-12">
         <h2 className="text-3xl font-bold text-center mb-8">Why Najd Roads?</h2>
         <p className="text-center text-gray-700 max-w-3xl mx-auto">
           With over 25 years of recognized credibility and excellence in road
           infrastructure services, we pride ourselves on perseverance, planning,
           and delivering projects to specification and schedule.
         </p>
-      </section>
+      </section> */}
+      <ProjectSection />
 
       {/* Certified Experience */}
-      <section className="py-16 px-6 md:px-12 bg-gray-100">
+      <CertifiedExperience />
+      {/* <section className="py-16 px-6 md:px-12 bg-gray-100">
         <div className="grid gap-8 md:grid-cols-2 items-center">
           <div className="order-2 md:order-1">
             <img
@@ -48,7 +53,8 @@ const Home = () => {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
+      <FleetSection />
     </div>
   );
 };

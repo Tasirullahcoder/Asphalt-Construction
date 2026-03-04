@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../../public/NAJD-LOGO-02.png";
+
+import logo from "@/../public/./home_images/NAJD-LOGO-02.png";
 function Logo() {
   return (
     <div>

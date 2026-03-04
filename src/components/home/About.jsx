@@ -1,4 +1,5 @@
-import im1 from "./../../public/about_img1.jpg";
+// import im1 from "./../../public/about_img1.jpg";
+import im1 from "@/../public/home_images/about_img1.jpg";
 import Image from "next/image";
 
 function About() {

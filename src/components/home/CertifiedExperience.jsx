@@ -1,6 +1,6 @@
 export default function CertifiedExperience() {
   return (
-    <section className="py-16 bg-[#28282b]">
+    <section className="py-27 bg-[#28282b]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
           {/* LEFT COLUMN */}

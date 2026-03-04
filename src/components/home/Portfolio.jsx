@@ -1,7 +1,8 @@
 function Portfolio() {
   const clients = Array.from(
     { length: 24 },
-    (_, i) => `/clientportfolio/${i + 1}.png`,
+
+    (_, i) => `/home_images/clientportfolio/${i + 1}.png`,
   );
 
   return (

@@ -1,30 +1,38 @@
 import Image from "next/image";
 import img48 from "@/../public/about_images/Najd-Roads-Website-48-1.jpg";
+import { DM_Serif_Display } from "next/font/google";
+
+const dmSerif = DM_Serif_Display({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export default function CertifiedExperience() {
   return (
-    <section className="w-full bg-white py-12">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+    <section className="w-full bg-white py-16 md:py-24 overflow-hidden">
+      <div className="max-w-[1200px] mx-auto px-4 md:px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
           {/* Left Side Image */}
           <div className="flex justify-center md:justify-start">
             <Image
-              src={img48} // move image to public folder
+              src={img48}
               alt="Certified Experience"
               width={600}
-              height={600}
-              className="rounded-lg object-cover"
+              height={601}
+              className="w-full max-w-[600px] md:w-[600px] object-cover"
               priority
             />
           </div>
 
           {/* Right Side Content */}
-          <div>
-            <h3 className="text-2xl md:text-3xl font-semibold text-gray-800">
+          <div className="px-2 md:px-4">
+            <h2
+              className={`text-[20px] md:text-3xl font-bold text-[#17479e] ${dmSerif.className}`}
+            >
               Certified Experience
-            </h3>
+            </h2>
 
-            <p className="mt-4 text-gray-600 leading-relaxed text-[16px] md:text-[17px]">
+            <p className="mt-4 max-w-[470px] text-[#020101] leading-[27.2px] text-[16px] md:text-[17px] text-justify">
               Our experience in implementing various projects with
               specifications and standards approved by all authorities in the
               Kingdom gives us the motivation to keep progressing and growing.
@@ -33,8 +41,9 @@ export default function CertifiedExperience() {
               and companies.
             </p>
 
-            {/* Star Rating */}
-            <div className="flex mt-6 text-yellow-500 text-xl">★ ★ ★ ★ ★</div>
+            <div className="flex mt-6 text-yellow-500 text-3xl md:text-4xl">
+              ★ ★ ★ ★ ★
+            </div>
           </div>
         </div>
       </div>

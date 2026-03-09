@@ -1,28 +1,29 @@
 import { DM_Serif_Display } from "next/font/google";
+
 const dmSerif = DM_Serif_Display({
   subsets: ["latin"],
   weight: "400",
 });
+
 export default function AboutIntro() {
   return (
     <section
-      className="w-full h-250 "
+      className="w-full"
       style={{
         backgroundColor: "#17479E",
         padding: "100px 0px",
       }}
     >
-      <div className="max-w-6xl mx-8">
+      <div className="max-w-6xl mx-auto px-4 md:px-6">
         {/* Heading */}
         <h2
-          className={`text-white text-start text-3xl md:text-[52px] font-semibold leading-17 
-          ${dmSerif.className}`}
+          className={`text-white text-start text-3xl md:text-[52px] font-semibold leading-17 ${dmSerif.className}`}
         >
           Management Speech
         </h2>
 
         {/* Two Column Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-30 mt-12 text-[#dcf2ff] text-[17px] leading-7 text-justify">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-12 text-[#dcf2ff] text-[17px] leading-7 text-justify">
           {/* Left Column */}
           <div>
             <p>

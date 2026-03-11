@@ -1,5 +1,5 @@
 import Image from "next/image";
-import workImg from "./../../../public/sevices/Collect-works.jpg";
+import workImg from "./../../../public/services/Collect-works.jpg";
 
 export default function RoadWorksSection() {
   return (
